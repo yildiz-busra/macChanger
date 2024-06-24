@@ -23,13 +23,13 @@ def control(interface):
         return None
 
 
-print("----------MAC CHANGER----------")
+print("\n\n----------MAC CHANGER----------\n\n")
 (userInput, arguments) = getUserInput()
 changeMAC(userInput.interface, userInput.macAddress)
 finalMAC = control(userInput.interface)
 
 if finalMAC == userInput.macAddress:
-    print("MAC address successfully changed!")
+    print("\nMAC address successfully changed!")
 else:
-    print("Error changing MAC address!")
+    print("\nError changing MAC address!")
 
